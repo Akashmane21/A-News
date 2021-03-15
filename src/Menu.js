@@ -1,4 +1,3 @@
-import react from 'react';
 import {NavLink} from 'react-router-dom'
 import './Netflix.css'
 import {  IconButton} from '@material-ui/core'
@@ -6,13 +5,12 @@ import {  IconButton} from '@material-ui/core'
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
 import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
-import StarsRoundedIcon from '@material-ui/icons/StarsRounded';
-import ContactPhoneRoundedIcon from '@material-ui/icons/ContactPhoneRounded';
+
 import FavoriteRoundedIcon from '@material-ui/icons/FavoriteRounded';
 import AddToPhotosIcon from '@material-ui/icons/AddToPhotos';
 
 
-function Menu(props){
+function Menu(){
 
 
         function theme(){

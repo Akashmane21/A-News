@@ -1,5 +1,4 @@
 import './App.css';
-import reactRouterDom from 'react-router-dom';
 import {Route,Switch} from 'react-router-dom'
 import Bollywood from './Pages/Bollywood'
 import Politics from './Pages/Politics'
