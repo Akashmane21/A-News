@@ -178,6 +178,7 @@ align-items: center;
 background-color: rgba(27, 27, 27, 0.342);
 border-radius: 20px;
 width: 95%;
+overflow: hidden;
 padding: 50px;
   }
 
