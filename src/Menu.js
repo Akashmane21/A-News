@@ -13,13 +13,7 @@ import AddToPhotosIcon from '@material-ui/icons/AddToPhotos';
 function Menu(){
 
 
-        function theme(){
-                document.body.style.background = "rgb(204, 200, 200)";
-                for(var i=0 ; i<=10 ; i++){
-                document.querySelector('.movie').style.background = "red";}
-                
-        
-        }
+      
 return (
     <>
 
