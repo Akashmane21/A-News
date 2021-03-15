@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
-
+import reactRouterDom from 'react-router-dom';
+import {Route,Switch} from 'react-router-dom'
+import Bollywood from './Pages/Bollywood'
+import Politics from './Pages/Politics'
+import India from './Pages/India'
+import World from './Pages/World'
+import Top from './Pages/Top'
+import Search from './Pages/Error'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+   
+<Switch>
+         <Route exact path='/' component={Top} />
+         <Route exact path='/india' component={India} />
+         <Route exact path='/World' component={World} /> 
+         <Route exact path='/Top' component={Top} />
+         <Route exact path='/Bollywood' component={Bollywood} /> 
+         <Route exact path='/politics' component={Politics} />
+         <Route exact path='/Search' component={Search} />
+         <Route component={Error} />
+ </Switch>
+    </>
   );
 }
 
