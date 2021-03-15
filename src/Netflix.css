@@ -57,7 +57,9 @@ header ul{
   padding-bottom: 10px;
   width: 100%;
   display: flex;
-  background: rgba(36, 34, 34, 0.25);
+  /* background-color: black; */
+
+  background: rgb(105, 103, 103);
     /* box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37); */
     /* backdrop-filter: blur(0.3px); */
     /* border-radius: 10px; */
@@ -143,7 +145,9 @@ box-shadow: 0px 2px 22px 0px black;
 
   body{
     /* padding: 10px; */
-    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(148, 145, 145);
   }
 
 .Top > img{
@@ -153,7 +157,7 @@ box-shadow: 0px 2px 22px 0px black;
   filter: contrast(141%);
   position: relative;
   width: 100%;
-  box-shadow: 0px 6px 32px 0px rgba(44, 44, 112, 0.493);
+  box-shadow: 0px 6px 32px 0px rgba(7, 7, 175, 0.719);
 }
 
 .Top{
@@ -165,13 +169,13 @@ box-shadow: 0px 2px 22px 0px black;
 
   .heading{
     position: absolute;
-    top:200px;
+    top:0px;
 left: 0;
 margin: 10px;
 display: inline-block;
 justify-content: space-between;
 align-items: center;
-background-color: rgba(27, 27, 27, 0.493);
+background-color: rgba(27, 27, 27, 0.342);
 border-radius: 20px;
 width: 95%;
 padding: 50px;
@@ -185,3 +189,6 @@ padding: 50px;
     color: rgb(0, 255, 34);
     
   } 
+  .heading img{
+    height: 150px;
+  }
