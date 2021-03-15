@@ -191,5 +191,7 @@ padding: 50px;
     
   } 
   .heading img{
+    position: relative;
+    left: -10px;
     height: 150px;
   }
