@@ -1,6 +1,6 @@
 import '../App.css';
 import Menu from '../Menu'
-import logo from '../logo.png'
+// import logo from '../logo.png'
 import Avatar from '@material-ui/core/Avatar';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
 
