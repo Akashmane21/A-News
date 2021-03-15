@@ -78,7 +78,7 @@ header ul li{
 
 
 .icon1:hover svg {
-  fill: black !important;
+  fill: rgb(189, 9, 9) !important;
 }
 .icon2:hover svg {
   fill: black !important;
