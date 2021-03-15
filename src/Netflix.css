@@ -12,7 +12,7 @@ font-family: 'magnito';
 body{
   /* background-color: rgb(204, 200, 200); */
 
-background-color: rgb(46, 45, 45);
+/* background-color: rgb(46, 45, 45); */
     min-height: 100vh;
 }
 header{
@@ -21,7 +21,7 @@ header{
   left: 0;
   width: 100%;
   margin: 0px;
-  background-color: rgb(7, 7, 7);
+  background-color: rgb(15, 15, 15);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +29,7 @@ header{
   z-index: 100000;
   padding: 5px;
   height: 50px;
+  border-radius: 20px;
  
   padding: 10px;
   width: 100%;
@@ -156,7 +157,7 @@ box-shadow: 0px 2px 22px 0px black;
     /* padding: 10px; */
     padding: 0px;
     margin: 0px;
-    background-color: rgb(148, 145, 145);
+    background-color: rgba(3, 3, 3, 0.911);
   }
 
 .Top > img{
@@ -166,7 +167,7 @@ box-shadow: 0px 2px 22px 0px black;
   filter: contrast(141%);
   position: relative;
   width: 100%;
-  box-shadow: 0px 6px 32px 0px rgba(7, 7, 175, 0.719);
+  box-shadow: 0px 6px 32px 0px rgba(13, 107, 49, 0.438);
 }
 
 .Top{
