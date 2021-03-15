@@ -175,11 +175,26 @@ box-shadow: 0px 2px 22px 0px black;
   position: absolute;
 }
 
+.intro{
+  position: absolute;
+  display: flex;
+  align-content: center;
+  background-color: rgba(255, 255, 255, 0.582);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0px 8px 32px 0px rgb(58, 80, 109);
 
-
+    top:10px;
+left: 10px;
+}
+.intro h4{
+  padding-left: 7px;
+  position: relative;
+  top: 5px;
+}
   .heading{
     position: absolute;
-    top:0px;
+    top:100px;
 left: 0;
 margin: 10px;
 display: inline-block;
@@ -189,7 +204,7 @@ background-color: rgba(27, 27, 27, 0.342);
 border-radius: 20px;
 width: 95%;
 overflow: hidden;
-padding: 50px;
+padding: 10px;
   }
 
   .heading  h2 , p{
