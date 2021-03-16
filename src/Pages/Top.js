@@ -1,10 +1,46 @@
 import '../App.css';
 import Menu from '../Menu'
-// import logo from '../logo.png'
+import { Component } from "react";
+
 import Avatar from '@material-ui/core/Avatar';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
 
-function Top() {
+import Toptrend from '../Components/Toptrend';
+
+
+
+class Top extends Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         data: []
+      }
+   }
+
+componentDidMount() {
+
+   fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=ea422f08be18496499a73fdc6c5e3b3a")
+   .then(response => {
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+      console.log(data.articles[0].urlToImage);
+
+   this.setState({
+                 data:data.articles
+                
+   })
+           
+ })
+
+}
+
+
+
+render() {
+   const { data } = this.state;
+   console.log(data);
   return (
    <>
 <Menu />
@@ -28,8 +64,29 @@ function Top() {
 <p>increase the knowledge</p></center>
 </div>
    </div>
+
+<div class="lower_body">
+{Array.isArray(data) && data.map(object => (
+         
+         <Toptrend 
+         img={object.urlToImage}
+         title={object.title} 
+         description={object.description}
+         url={object.url}
+         // source={object.source}
+         content={object.content}
+         author={object.author}
+
+         />
+       ))}
+</div>
+
+
    </>
   );
 }
+
+}
+
 
 export default Top;
