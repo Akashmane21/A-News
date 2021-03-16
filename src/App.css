@@ -10,6 +10,37 @@
   .top > img{
       height: 100px;
   }
+
+  .contents{
+      padding: 10px;
+      display: flex;
+      /* background-color: rgba(65, 62, 62, 0.548); */
+      /* padding-left: 30px; */
+      border-radius: 18px;
+  }
+
+  .first{
+      padding: 10px;
+      color: rgba(131, 127, 127, 0.986);
+      margin: 10px;
+      font-size: 7px;
+      /* width: 90px; */
+      /* height: 70px; */
+      /* overflow: hidden; */
+      /* background-color: yellow; */
+  }
+
+  .first  h3{
+      font-size: 20px;
+      position: relative;
+      top: 10px;
+  }
+
+  .first:hover{
+      background-color: rgba(33, 110, 110, 0.295);
+      border-radius: 19px;
+      
+  }
   
   .intro{
     position: absolute;
@@ -148,7 +179,7 @@
   
   .lower_body{
     position: relative;
-    top: 410px;
+    top: 550px;
   /* height: 1000px; */
   overflow: hidden;
   
