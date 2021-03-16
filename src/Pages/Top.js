@@ -19,15 +19,15 @@ class Top extends Component {
 
 componentDidMount() {
 
-   fetch("https://www.googleapis.com/customsearch/v1?key=AIzaSyCFWrEbh7Ho9EnriRJMe_SwBsWrBRV-f00&cx=017576662512468239146:omuauf_lfve&q=javascript")
+   fetch("https://sheet2api.com/v1/XeNO00vdSn66/news")
    .then(response => {
       return response.json();
     })
     .then(data => {
-      console.log(data.items);
+      console.log(data);
 
    this.setState({
-                 data:data.items
+                 data:data
                 
    })
            
@@ -51,7 +51,6 @@ render() {
 </div>
 <div className="heading">
 <center>
-{/* <img src={logo} alt="" /> */}
 <h1> A-News</h1>
 <div className="sidebar__search">
            <div className="sidebar__searchContainer">
@@ -73,9 +72,9 @@ render() {
         <div className="block">
         
         <div className="img">
-        <center><img src={object.displayLink} alt="" /></center></div>
-        <p>{object.htmlTitle}</p>
-        <h6>Author : {object.displayLink}</h6>
+        <center><img src={object.urlToImage} alt="" /></center></div>
+        <p>{object.title}</p>
+        <h6>Author : {object.author}</h6>
 
         </div>
     </div> 
