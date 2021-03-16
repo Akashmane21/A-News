@@ -25,7 +25,6 @@ componentDidMount() {
     })
     .then(data => {
       console.log(data);
-      console.log(data.articles[0].urlToImage);
 
    this.setState({
                  data:data.articles
