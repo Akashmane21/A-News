@@ -95,7 +95,7 @@ increase the knowledge</div>
    <div class="first">
    <center>
    <Avatar src="https://timesofindia.indiatimes.com/thumb/msid-75847753,imgsize-513467,width-400,resizemode-4/75847753.jpg" />
-   <h3>Sppu-pune</h3></center>
+   <h3>SPPU</h3></center>
    </div>
    
 
