@@ -5,7 +5,7 @@ import { Component } from "react";
 import Avatar from '@material-ui/core/Avatar';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
 
-import Toptrend from '../Components/Toptrend';
+// import Toptrend from '../Components/Toptrend';
 
 
 
@@ -67,17 +67,20 @@ render() {
 
 <div class="lower_body">
 {Array.isArray(data) && data.map(object => (
-         
-         <Toptrend 
-         img={object.urlToImage}
-         title={object.title} 
-         description={object.description}
-         url={object.url}
-         // source={object.source}
-         content={object.content}
-         author={object.author}
 
-         />
+
+         <div  className="Top_container">
+    
+        <div className="block">
+        
+        <div className="img">
+        <center><img src={object.urlToImage} alt="" /></center></div>
+        <p>{object.title}</p>
+        <h6>Author : {object.author}</h6>
+
+        </div>
+    </div> 
+       
        ))}
 </div>
 
