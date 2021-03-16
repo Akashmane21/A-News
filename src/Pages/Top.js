@@ -19,15 +19,15 @@ class Top extends Component {
 
 componentDidMount() {
 
-   fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=ea422f08be18496499a73fdc6c5e3b3a")
+   fetch("https://www.googleapis.com/customsearch/v1?key=AIzaSyCFWrEbh7Ho9EnriRJMe_SwBsWrBRV-f00&cx=017576662512468239146:omuauf_lfve&q=javascript")
    .then(response => {
       return response.json();
     })
     .then(data => {
-      console.log(data);
+      console.log(data.items);
 
    this.setState({
-                 data:data.articles
+                 data:data.items
                 
    })
            
@@ -73,9 +73,9 @@ render() {
         <div className="block">
         
         <div className="img">
-        <center><img src={object.urlToImage} alt="" /></center></div>
-        <p>{object.title}</p>
-        <h6>Author : {object.author}</h6>
+        <center><img src={object.displayLink} alt="" /></center></div>
+        <p>{object.htmlTitle}</p>
+        <h6>Author : {object.displayLink}</h6>
 
         </div>
     </div> 
