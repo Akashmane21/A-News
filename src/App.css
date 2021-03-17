@@ -82,9 +82,18 @@
     }
   
     .heading h2 , p{
-      
-      color: rgba(179, 113, 14, 0.76);
+      padding: 15px;
+      color: #b9b5bb;
   
+    }
+
+
+    a{
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: none;
     }
     .heading  h1{
       color: rgb(22, 241, 2);
@@ -221,11 +230,19 @@
 
   .block{
       border-radius: 10px;
-      background-color: rgba(17, 17, 17, 0.541);
+      background-color: #2a2f3669;
       margin-top: 20px;
       padding: 10px;
+      cursor: pointer;
+
       overflow: hidden;
       /* border: 1px solid chartreuse; */
+  }
+
+  .block:hover{
+      position: relative;
+      box-shadow: 0px 4px 8px 0px rgba(66, 66, 128, 0.356);
+      top: -4px;
   }
 
   .lower_body h1{

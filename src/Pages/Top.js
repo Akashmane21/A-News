@@ -1,5 +1,7 @@
 import '../App.css';
 import Menu from '../Menu'
+import {NavLink} from 'react-router-dom'
+
 import { Component } from "react";
 import logo from '../logo.png'
 import Avatar from '@material-ui/core/Avatar';
@@ -131,13 +133,13 @@ increase the knowledge</div>
 
          <div  className="Top_container">
     
-        <div className="block">
+         <NavLink to="/India"><div className="block">
         
         <div className="img">
         <center><img src={object.urlToImage} alt="" /></center></div>
         <p>{object.title}</p>
 
-        </div>
+        </div></NavLink> 
     </div> 
        
        ))}

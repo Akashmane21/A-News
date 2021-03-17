@@ -21,16 +21,16 @@ return (
 
 <ul className="icons">
     <li className="icon1"><NavLink exact activeClassName = "active_class" to="/"><IconButton>
-            <HomeRoundedIcon  /></IconButton></NavLink></li>
+            <HomeRoundedIcon  /> <h4>Home</h4></IconButton></NavLink></li>
     <li className="icon4"><NavLink exact activeClassName = "active_class" to="/India"><IconButton>
-            <FavoriteRoundedIcon /></IconButton></NavLink></li>
+            <FavoriteRoundedIcon /><h4>Reading</h4></IconButton></NavLink></li>
     
-            <li className="icon4"><NavLink exact activeClassName = "active_class" to="/Bollywood"><IconButton>
-            <AddToPhotosIcon /></IconButton></NavLink></li>
-    <li className="icon2"><NavLink exact activeClassName = "active_class" to="/World"><IconButton>
-            <AccountCircleRoundedIcon /></IconButton></NavLink></li>
+            {/* <li className="icon4"><NavLink exact activeClassName = "active_class" to="/Bollywood"><IconButton>
+            <AddToPhotosIcon /></IconButton></NavLink></li> */}
+    {/* <li className="icon2"><NavLink exact activeClassName = "active_class" to="/World"><IconButton>
+            <AccountCircleRoundedIcon /></IconButton></NavLink></li> */}
    <li className="icon3"><NavLink exact activeClassName = "active_class" to="/Politics"><IconButton>
-            <PersonRoundedIcon /></IconButton></NavLink></li>
+            <PersonRoundedIcon /><h4>About</h4></IconButton></NavLink></li>
     
    
 
