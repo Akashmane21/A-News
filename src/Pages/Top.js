@@ -14,13 +14,7 @@ class Top extends Component {
  
   
    constructor(props) {
-      function click() {
-         var base = document.querySelector('#news'); 
-      base.addEventListener('click', function(event) {
-         console.log("clicked");
-      });
       
-      }
       super(props);
       this.state = {
          data: []
