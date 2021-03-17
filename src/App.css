@@ -128,8 +128,8 @@
       height: 140px;
     
        
-        -webkit-animation: spin 2s linear infinite;
-        animation: spin 5s linear infinite;
+        -webkit-animation: spin 5s linear infinite;
+        animation: spin 15s linear infinite;
         /* visibility:hidden; */
       }
       
@@ -249,4 +249,12 @@
     font-family: "Montserrat Alternates", sans-serif;
     color: darkgreen;
     font-weight: bolder;
+}
+
+button{
+    background: none;
+    border: none;
+    outline-width: 0px;
+
+
 }

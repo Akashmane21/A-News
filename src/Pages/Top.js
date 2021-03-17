@@ -1,18 +1,26 @@
 import '../App.css';
 import Menu from '../Menu'
-import {NavLink} from 'react-router-dom'
 
 import { Component } from "react";
 import logo from '../logo.png'
 import Avatar from '@material-ui/core/Avatar';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
 import logo1 from '../title (1).png'
-// import Toptrend from '../Components/Toptrend';
+import Toptrend from '../Components/Toptrend';
 
 
 
 class Top extends Component {
+ 
+  
    constructor(props) {
+      function click() {
+         var base = document.querySelector('#news'); 
+      base.addEventListener('click', function(event) {
+         console.log("clicked");
+      });
+      
+      }
       super(props);
       this.state = {
          data: []
@@ -20,22 +28,29 @@ class Top extends Component {
    }
 
 componentDidMount() {
+   
+  
 
-   fetch("https://sheet2api.com/v1/XeNO00vdSn66/news")
+   fetch("https://script.google.com/macros/s/AKfycbz4BS-um-GSPi-5GVUcseTva7DrpYAe4wLkvBATd5puTmAAr9ruDvMo-gQHQSt07IJB5A/exec?action=read")
    .then(response => {
       return response.json();
     })
     .then(data => {
-      console.log(data);
+      console.log(data.records);
+
 
    this.setState({
-                 data:data
+                 data:data.records
                 
    })
            
  })
 
+
+
+
 }
+
 
 
 
@@ -130,17 +145,20 @@ increase the knowledge</div>
 <h1>Top Headlines:</h1>
 {Array.isArray(data) && data.map(object => (
 
+ <Toptrend 
+ img={object.urlToImage} 
+ title={object.title} 
+ author={object.author}
+ url={object.url}
+ publishedAt={object.publishedAt}
+ description={object.description}
+ content={object.content}
+ publishedAt={object.publishedAt}
+ source_id={object.sourceid}
+ source_name={object.sourcename}
 
-         <div  className="Top_container">
-    
-         <NavLink to="/India"><div className="block">
-        
-        <div className="img">
-        <center><img src={object.urlToImage} alt="" /></center></div>
-        <p>{object.title}</p>
 
-        </div></NavLink> 
-    </div> 
+ />
        
        ))}
 </div>
@@ -148,7 +166,10 @@ increase the knowledge</div>
 
    </>
   );
+
 }
+
+
 
 }
 
