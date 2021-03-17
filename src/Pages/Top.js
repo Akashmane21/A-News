@@ -136,7 +136,6 @@ increase the knowledge</div>
         <div className="img">
         <center><img src={object.urlToImage} alt="" /></center></div>
         <p>{object.title}</p>
-        <h6>Author : {object.author}</h6>
 
         </div>
     </div> 

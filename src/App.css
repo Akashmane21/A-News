@@ -185,7 +185,7 @@
   
   .lower_body{
     position: relative;
-    top: 440px;
+    top: 540px;
   /* height: 1000px; */
   overflow: hidden;
   
@@ -193,6 +193,9 @@
     /* border: 1px solid rgb(141, 138, 138); */
     border-radius: 10px;
     margin: 6px;
+  }
+
+  .lower_body h1{
   }
 
   .block img{
@@ -227,5 +230,6 @@
 
   .lower_body h1{
     font-family: "Montserrat Alternates", sans-serif;
-    color: rgb(255, 166, 0);
-  }
+    color: darkgreen;
+    font-weight: bolder;
+}
