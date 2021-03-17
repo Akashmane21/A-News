@@ -147,7 +147,6 @@ increase the knowledge</div>
  publishedAt={object.publishedAt}
  description={object.description}
  content={object.content}
- publishedAt={object.publishedAt}
  source_id={object.sourceid}
  source_name={object.sourcename}
 
