@@ -56,9 +56,23 @@ render() {
 <Menu />
 <div className="Top">
 <div className="intro">
-<Avatar src="https://instagram.fyyc6-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/90651740_569667850563489_8116038555498102848_n.jpg?tp=1&_nc_ht=instagram.fyyc6-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=4ESs9LR4HUEAX9tEKIE&oh=04b9eca23cf98a6dbd5db76029468e58&oe=607719BC" />
-<h4>Hii, I,m Akash</h4>
-</div><img id="title" src={logo1} alt="" />
+<h1>The News-Wave</h1>
+{/* <Avatar src="https://instagram.fyyc6-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/90651740_569667850563489_8116038555498102848_n.jpg?tp=1&_nc_ht=instagram.fyyc6-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=4ESs9LR4HUEAX9tEKIE&oh=04b9eca23cf98a6dbd5db76029468e58&oe=607719BC" />
+<h4>Hii, I,m Akash</h4> */}
+</div>
+
+<div id="title">
+    <input type="checkbox"
+    class="checkbox"
+    id="input-switch"
+    name="dark"
+     />
+
+    <label class="switch" for="input-switch">
+        
+        <h1 id="White">🌞</h1><h1 id="black">🌚</h1><span class="circle" ></span>
+    </label>
+    </div>
 
 <div className="heading">
 <center>
