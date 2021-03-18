@@ -8,20 +8,20 @@ import SearchOutlined from '@material-ui/icons/SearchOutlined';
 import Toptrend from '../Components/Toptrend';
 
 function dark(e){
-   // document.body.style.background = "white";
-
+   document.body.style.background = "gray";
+   var el = e.target;
+      
+   if (el.tagName.toLowerCase() === 'button') {
+     
+       el.style.backgroundColor = el.style.backgroundColor === 'green' ? 'red' : 'green';
+   }
 document.addEventListener('DOMContentLoaded', function() {
 
 
 
    
       
-          var el = e.target;
-      
-          if (el.tagName.toLowerCase() === 'button') {
-            
-              el.style.backgroundColor = el.style.backgroundColor === 'green' ? 'red' : 'green';
-          }
+        
       
       
 
