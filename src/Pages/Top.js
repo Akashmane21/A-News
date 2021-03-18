@@ -11,12 +11,15 @@ function key(e){
 
       if(e.key==='Enter'){
           console.log(e.target.value)
-          window.find(e.target.value)
+         //  window.find(e.target.value)
          if(!( window.find(e.target.value)))
          {
-            alert( e.target.value+" not found")
+            document.getElementById("myInput").value=""         
+            document.getElementById("myInput").placeholder="Search not found"      
+        }
+
          }
-      }
+      
  
 }
 
