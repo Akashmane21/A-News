@@ -384,12 +384,13 @@ h5{
 
 #White{
     position: relative;
-    top: 3px;
+    top: 7px;
     left: 0px;
 
 }
 #black{
+    /* font-size: 10px; */
     position: relative;
-    top: 3px;
-    left: 12px;
+    top: 7px;
+    left: 19px;
 }

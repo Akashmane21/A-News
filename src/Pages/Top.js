@@ -7,10 +7,25 @@ import Avatar from '@material-ui/core/Avatar';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
 import Toptrend from '../Components/Toptrend';
 
-function dark(){
+function dark(e){
    // document.body.style.background = "white";
 
 document.addEventListener('DOMContentLoaded', function() {
+
+
+
+   
+      
+          var el = e.target;
+      
+          if (el.tagName.toLowerCase() === 'button') {
+            
+              el.style.backgroundColor = el.style.backgroundColor === 'green' ? 'red' : 'green';
+          }
+      
+      
+
+
    var checkboxes = document.querySelectorAll('input[type=checkbox][name=dark]');
   
    for (var checkbox of checkboxes) {
@@ -91,7 +106,7 @@ render() {
 
     <label class="switch" for="input-switch">
         
-        <h1 id="White">🌞</h1><h1 id="black">🌚</h1><span class="circle" ></span>
+        <h2 id="White">🌞</h2><h2 id="black">🌚</h2><span class="circle" ></span>
     </label>
     </div>
 
