@@ -12,7 +12,10 @@ function key(e){
       if(e.key==='Enter'){
           console.log(e.target.value)
           window.find(e.target.value)
-          document.getElementById("myInput").value=""
+         if(!( window.find(e.target.value)))
+         {
+            alert( e.target.value+" not found")
+         }
       }
  
 }
