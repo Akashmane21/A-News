@@ -47,16 +47,19 @@
     position: absolute;
     display: flex;
     align-content: center;
-    background-color: rgba(141, 135, 135, 0.582);
     border-radius: 20px;
     padding: 6px;
-    box-shadow: 0px 2px 9px 0px rgba(17, 75, 151, 0.651);
-  
-      top:10px;
+    text-shadow: 0px 2px 9px 0px rgba(17, 75, 151, 0.651);
+
+      /* top:10px; */
   left: 10px;
   }
-  .intro h4{
+
+
+  .intro h1{
     padding-left: 7px;
+    font-family: "Montserrat Alternates", sans-serif;
+
     position: relative;
     top: 5px;
   }
@@ -109,7 +112,7 @@
 
     #title{
         position: absolute;
-        top: -10px;
+        top: 0px;
         right: 10px;
         height: 70px;
 
@@ -128,8 +131,8 @@
       height: 140px;
     
        
-        -webkit-animation: spin 5s linear infinite;
-        animation: spin 15s linear infinite;
+        -webkit-animation: spin 20s linear infinite;
+        animation: spin 20s linear infinite;
         /* visibility:hidden; */
       }
       
@@ -338,24 +341,22 @@ h5{
     cursor: pointer;
     box-shadow:0px 2px 10px 0px  rgba(4, 8, 247, 0.363);
 
-    width: 100px;
-    height: 50px;
+    width: 90px;
+    height: 40px;
     border-radius: 200px;
     background-color: rgb(15, 15, 15);
 
     /* background-color: rgb(196, 192, 192); */
     transition: background-color 0.2s ;
 }
-body{
-    background: rgba(12, 12, 12, 0.884);
-}
+
 .circle{
     content: "";
     position: absolute;
     top: 5px;
     left: 5px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     box-shadow: 0px 4px 20px 0px rgba(17, 17, 107, 0.603);
 
     border-radius: 90px;
@@ -383,12 +384,12 @@ body{
 
 #White{
     position: relative;
-    top: 10px;
-    left: 10px;
+    top: 3px;
+    left: 0px;
 
 }
 #black{
     position: relative;
-    top: 10px;
-    left: 20px;
+    top: 3px;
+    left: 12px;
 }

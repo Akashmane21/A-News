@@ -5,12 +5,32 @@ import { Component } from "react";
 import logo from '../logo.png'
 import Avatar from '@material-ui/core/Avatar';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
-import logo1 from '../title (1).png'
 import Toptrend from '../Components/Toptrend';
 
+function dark(){
+   // document.body.style.background = "white";
+
+document.addEventListener('DOMContentLoaded', function() {
+   var checkboxes = document.querySelectorAll('input[type=checkbox][name=dark]');
+  
+   for (var checkbox of checkboxes) {
+     checkbox.addEventListener('change', function(event) {
+       if (event.target.checked) {
+         document.body.style.background = "white";
+         alert("fghj")
+       } else {
+         document.body.style.background = "rgba(79, 131, 124, 0.699)";
+       }
+     });
+   }
+ }, false);
+}
 
 
 class Top extends Component {
+
+
+   
  
   
    constructor(props) {
@@ -66,6 +86,7 @@ render() {
     class="checkbox"
     id="input-switch"
     name="dark"
+    onChange={dark}
      />
 
     <label class="switch" for="input-switch">
