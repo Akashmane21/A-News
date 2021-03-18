@@ -51,7 +51,7 @@
     padding: 6px;
     text-shadow: 0px 2px 9px 0px rgba(17, 75, 151, 0.651);
 
-      top:10px;
+      top:20px;
   left: 10px;
   }
 
@@ -385,12 +385,14 @@ h5{
 #White{
     position: relative;
     top: 7px;
-    left: 0px;
+    font-size: 20px;
+
+    left: 7px;
 
 }
 #black{
-    /* font-size: 10px; */
+    font-size: 20px;
     position: relative;
     top: 7px;
-    left: 19px;
+    left: 25px;
 }

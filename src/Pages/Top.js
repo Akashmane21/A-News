@@ -7,8 +7,31 @@ import Avatar from '@material-ui/core/Avatar';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
 import Toptrend from '../Components/Toptrend';
 
+
+function myFunction() {
+   var input, filter, ul, li, a, i, txtValue;
+   input = document.getElementById("myInput");
+   filter = input.value.toUpperCase();
+   console.log(filter);
+   ul = document.getElementById("myUL");
+   li = ul.getElementsByTagName("li");
+   for (i = 0; i < li.length; i++) {
+
+       a = li[i].getElementsByTagName("a")[0];
+       txtValue = a.textContent || a.innerText;
+       console.log(txtValue);
+       if (txtValue.toUpperCase().indexOf(filter) > -1) {
+           li[i].style.display = "";
+
+       } else {
+           li[i].style.display = "none";
+
+       }
+   }
+}
+
 function dark(e){
-   document.body.style.background = "gray";
+   document.body.style.background = "rgba(79, 131, 124, 0.699)";
    var el = e.target;
       
    if (el.tagName.toLowerCase() === 'button') {
@@ -123,9 +146,10 @@ increase the knowledge</div>
 <div className="sidebar__search">
            <div className="sidebar__searchContainer">
                <SearchOutlined />
-               <input type="text" placeholder="Search Anything..." />
-           </div>
-       </div></center>
+               <input type="text" id="myInput" onkeyup={myFunction}
+                placeholder="Search for News.." title="Type in a name" />            </div>
+       
+     </div></center>
 
 <div className="contents">
    <div class="first">
