@@ -7,63 +7,15 @@ import Avatar from '@material-ui/core/Avatar';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
 import Toptrend from '../Components/Toptrend';
 
+function key(e){
 
-function myFunction() {
-   var input, filter, ul, li, a, i, txtValue;
-   input = document.getElementById("myInput");
-   filter = input.value.toUpperCase();
-   console.log(filter);
-   ul = document.getElementById("myUL");
-   li = ul.getElementsByTagName("li");
-   for (i = 0; i < li.length; i++) {
-
-       a = li[i].getElementsByTagName("a")[0];
-       txtValue = a.textContent || a.innerText;
-       console.log(txtValue);
-       if (txtValue.toUpperCase().indexOf(filter) > -1) {
-           li[i].style.display = "";
-
-       } else {
-           li[i].style.display = "none";
-
-       }
-   }
+      if(e.key==='Enter'){
+          console.log(e.target.value)
+          window.find(e.target.value)
+          document.getElementById("myInput").value=""
+      }
+ 
 }
-
-function dark(e){
-   document.body.style.background = "rgba(79, 131, 124, 0.699)";
-   var el = e.target;
-      
-   if (el.tagName.toLowerCase() === 'button') {
-     
-       el.style.backgroundColor = el.style.backgroundColor === 'green' ? 'red' : 'green';
-   }
-document.addEventListener('DOMContentLoaded', function() {
-
-
-
-   
-      
-        
-      
-      
-
-
-   var checkboxes = document.querySelectorAll('input[type=checkbox][name=dark]');
-  
-   for (var checkbox of checkboxes) {
-     checkbox.addEventListener('change', function(event) {
-       if (event.target.checked) {
-         document.body.style.background = "white";
-         alert("fghj")
-       } else {
-         document.body.style.background = "rgba(79, 131, 124, 0.699)";
-       }
-     });
-   }
- }, false);
-}
-
 
 class Top extends Component {
 
@@ -124,7 +76,7 @@ render() {
     class="checkbox"
     id="input-switch"
     name="dark"
-    onChange={dark}
+   //  onChange={dark}
      />
 
     <label class="switch" for="input-switch">
@@ -146,7 +98,7 @@ increase the knowledge</div>
 <div className="sidebar__search">
            <div className="sidebar__searchContainer">
                <SearchOutlined />
-               <input type="text" id="myInput" onkeyup={myFunction}
+               <input type="text" onKeyUp={key} id="myInput"
                 placeholder="Search for News.." title="Type in a name" />            </div>
        
      </div></center>
@@ -187,7 +139,7 @@ increase the knowledge</div>
    <div class="first">
    <center>
    <Avatar src="https://www.hamilton-medical.com/.imaging/stk/hamilton-theme/text-backgroundimage-tablet/dam/Images/A-Pictures/Home/covid-19-header-2000x769.jpg/jcr:content/covid-19-header-2000x769.jpg.2020-03-20-09-55-30.jpg" />
-   <h3>Covi19</h3></center>
+   <h3>Covid-19</h3></center>
    </div>
 
 
