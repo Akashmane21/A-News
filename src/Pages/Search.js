@@ -47,8 +47,8 @@ componentDidMount() {
   
 
   
- var url = "https://gnews.io/api/v4/search?q=" + "{searchr} "+ "&token=b7b6991adf7e68c60acd7bb07bb7d54c&lang=hin"
-console.log(url);
+//  var url = "https://gnews.io/api/v4/search?q=" + "{searchr} "+ "&token=b7b6991adf7e68c60acd7bb07bb7d54c&lang=hin"
+// console.log(url);
   fetch("https://script.google.com/macros/s/AKfycbzzA7wIkfsf5XpOpl4j9z0bZc_WN7paq0Dt_FDNqnFv167Y3LALIxGxUXa88Z-b_kXR/exec?action=read")
   .then(response => {
      return response.json();
