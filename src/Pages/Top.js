@@ -10,7 +10,7 @@ import logo from '../logo.png'
 import Avatar from '@material-ui/core/Avatar';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
 import Toptrend from '../Components/Toptrend';
-import Politics from './Politics'
+// import Politics from './Politics'
 // import { Button } from '@material-ui/core';
 
 
@@ -171,7 +171,7 @@ increase the knowledge</div>
    <div class="first">
    <center>
    <Avatar src="https://www.hamilton-medical.com/.imaging/stk/hamilton-theme/text-backgroundimage-tablet/dam/Images/A-Pictures/Home/covid-19-header-2000x769.jpg/jcr:content/covid-19-header-2000x769.jpg.2020-03-20-09-55-30.jpg" />
-   <h3>Covid-19</h3></center>
+   <h3>Covid</h3></center>
    </div>
 
 
@@ -216,9 +216,9 @@ increase the knowledge</div>
 
 <br /><br /><br /><br /><br /><br /><br /><br />
 
-<div class="politics">
+{/* <div class="politics">
 <Politics />
-</div>
+</div> */}
 
    </>
   );

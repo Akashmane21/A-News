@@ -75,7 +75,7 @@ header ul li{
   width: 140px;
   font-family: "Montserrat Alternates", sans-serif !important;
 
-  margin: auto;
+  margin: 0px;
   overflow: hidden;
 /* margin-left: 20px; */
   list-style: none;
@@ -89,7 +89,7 @@ li h4{
   padding: 10px;
   position: relative;
   font-family: "Montserrat Alternates", sans-serif !important;
-
+font-size: 18px;
   top: 3px;
 }
 li{
@@ -115,7 +115,7 @@ li{
 
 
 .icon4{
-  width: 70px;
+  /* width: 70px; */
   /* position: relative;
   left: 40px; */
 }
