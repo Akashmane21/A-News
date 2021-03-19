@@ -117,17 +117,17 @@ increase the knowledge</div>
 
 <div className="sidebar__search">
            <div className="sidebar__searchContainer">
-           <SearchOutlined />
+           {/* <SearchOutlined /> */}
 
                <input type="text" onKeyUp={key} id="myInput"
                 placeholder="Search for News.." title="Type in a name" />    
                 
     
 
-<Fab size="small" color="secondary" aria-label="add">
 <NavLink exact activeClassName = "active_class" to="/Politics">
-   <SearchOutlined /></NavLink>
-        </Fab>
+   <SearchOutlined />
+   </NavLink>
+       
 
 
 

@@ -190,7 +190,7 @@ top: 20px;
     margin-right: 2vw;
     font-size: 42px !important;
     padding: 10px;
-    color: gray;
+    color: rgb(128, 128, 128);
   }
   
   .sidebar__searchContainer > input {
@@ -198,7 +198,7 @@ top: 20px;
     outline-width: 0;
     margin-left: 10px;
     font-size: 20px;
-    width: 70%;
+    width: 86%;
   }
   
   
