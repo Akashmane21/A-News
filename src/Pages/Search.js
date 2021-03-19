@@ -5,12 +5,11 @@ import SearchOutlined from '@material-ui/icons/SearchOutlined';
 // import Dev from '../20210319_152952.png'
 import Toptrend from '../Components/Toptrend';
 
-import { Component, useState } from "react";
+import { Component } from "react";
 
 
   function key(e){
 
-    const [searchr , newone] = useState("bnm")
    
     
     localStorage.setItem("search",e.target.value );
@@ -48,7 +47,7 @@ componentDidMount() {
   
 
   
- var url = "https://gnews.io/api/v4/search?q=" + {searchr} + "&token=b7b6991adf7e68c60acd7bb07bb7d54c&lang=hin"
+ var url = "https://gnews.io/api/v4/search?q=" + "{searchr} "+ "&token=b7b6991adf7e68c60acd7bb07bb7d54c&lang=hin"
 console.log(url);
   fetch("https://script.google.com/macros/s/AKfycbzzA7wIkfsf5XpOpl4j9z0bZc_WN7paq0Dt_FDNqnFv167Y3LALIxGxUXa88Z-b_kXR/exec?action=read")
   .then(response => {
