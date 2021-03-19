@@ -1,16 +1,30 @@
 import '../App.css';
 import Menu from '../Menu'
-
+import {NavLink} from 'react-router-dom'
+import { makeStyles } from '@material-ui/core/styles';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+import nm from '../nw.png'
 import { Component } from "react";
 import logo from '../logo.png'
 import Avatar from '@material-ui/core/Avatar';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
 import Toptrend from '../Components/Toptrend';
+import Politics from './Politics'
+import { Button } from '@material-ui/core';
 
+function go(){}
 function key(e){
+   localStorage.setItem("search",e.target.value );
+
+      
 
       if(e.key==='Enter'){
           console.log(e.target.value)
+
+          var se = localStorage.getItem("search")
+            document.getElementById("myInput").placeholder=se ;
+// window.open("https://developer.mozilla.org/en-US/docs/Web/API/Window/open")
           window.find(e.target.value)
       //    if(!( window.find(e.target.value)))
       //    {
@@ -70,44 +84,57 @@ render() {
   return (
    <>
 <Menu />
+
+
+
+
 <div className="Top">
-<div className="intro">
-<h1>The News-Wave</h1>
-{/* <Avatar src="https://instagram.fyyc6-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/90651740_569667850563489_8116038555498102848_n.jpg?tp=1&_nc_ht=instagram.fyyc6-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=4ESs9LR4HUEAX9tEKIE&oh=04b9eca23cf98a6dbd5db76029468e58&oe=607719BC" />
-<h4>Hii, I,m Akash</h4> */}
-</div>
 
-<div id="title">
-    <input type="checkbox"
-    class="checkbox"
-    id="input-switch"
-    name="dark"
-   //  onChange={dark}
-     />
 
-    <label class="switch" for="input-switch">
-        
-        <h2 id="White">🌞</h2><h2 id="black">🌚</h2><span class="circle" ></span>
-    </label>
-    </div>
 
-<div className="heading">
-<center>
-<div className="slogen">
+            <div className="intro">
+            
+            </div>
+
+            <div className="slogen">
 <img id="spin" src={logo} alt="" />
 <div class="slogen_child">
 Explore The World
 increase the knowledge</div>
 </div>
-{/* <h1> A-News</h1> */}<br />
+           
+
+<div className="heading">
+<center>
+
+
+
+
+
+
+{/* <h1> A-News</h1><br /> */}
+<img id="nw" src={nm} alt="" />
+
+
+
+
 
 <div className="sidebar__search">
            <div className="sidebar__searchContainer">
-               <SearchOutlined />
+           <SearchOutlined />
+
                <input type="text" onKeyUp={key} id="myInput"
-                placeholder="Search for News.." title="Type in a name" />            </div>
-       
+                placeholder="Search for News.." title="Type in a name" />    
+                
+                
+                   <NavLink  to="/Politics" >     
+
+<Fab size="small" color="secondary" aria-label="add">
+          <SearchOutlined />
+        </Fab>
+</NavLink ></div>
      </div></center>
+
 
 <div className="contents">
    <div class="first">

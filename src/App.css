@@ -70,7 +70,7 @@
   }
     .heading{
       position: absolute;
-      top:60px;
+      top:110px;
       line-height: 20px;
   left: 0;
   margin: 10px;
@@ -170,11 +170,15 @@
     display: flex;
     align-items: center;
     background-color: white;
-    width: 100%;
+    width: 90%;
+    /* margin-right: 30px; */
     height: 35px;
     border-radius: 20px;
   }
-  
+  #nw{
+      
+      height: 220px;
+  }
   .sidebar__searchContainer:hover{
     box-shadow: 0px 3px 6px 0px rgba(114, 112, 112, 0.514);
   }
