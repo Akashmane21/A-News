@@ -40,19 +40,19 @@ render() {
   return (
     <>
     <Menu />
+    <img src={  localStorage.getItem("img")} alt="" id="news_img1" />
+
  <div className="block" id="news_block">
-       
-        <div className="img" id="news_img">
-        <center><img src={  localStorage.getItem("img")} alt="" id="news_img1" /></center> </div>
+        
        <div className="items">
-       <h2>Source :   {localStorage.getItem("sourcename")}</h2>
+       {/* <center>🌫〽🔰🔰〰➖</center> */}
        <h6>  {localStorage.getItem("description")}
        {localStorage.getItem("content")}
     
        </h6>
    <center> <a href={localStorage.getItem("url")}> <button><h1>Read Full Article..<CallMissedOutgoingIcon /></h1></button>
 </a></center> 
-
+<h2>Source :   {localStorage.getItem("sourcename")}</h2>
 <hr/>
 
        <h5>Published At : { localStorage.getItem("publishedAt")}<br />

@@ -93,7 +93,7 @@ console.log(url);
 
 
 <div className="result">
-<h1 id="h1">Search Results - </h1>
+<h1 id="h1">{localStorage.getItem("search")} Search Results - </h1>
 
 {Array.isArray(data) && data.map(object => (
 
