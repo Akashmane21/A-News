@@ -1,4 +1,4 @@
-
+import Footer from '../Components/Footer'
 import CallMissedOutgoingIcon from '@material-ui/icons/CallMissedOutgoing';import { Component } from "react";
 import '../App.css';
 import Menu from '../Menu'
@@ -52,13 +52,11 @@ render() {
        </h6>
    <center> <a href={localStorage.getItem("url")}> <button><h1>Read Full Article..<CallMissedOutgoingIcon /></h1></button>
 </a></center> 
-<h2>Source :   {localStorage.getItem("sourcename")}</h2>
 <hr/>
+<h2>Source :   {localStorage.getItem("sourcename")}</h2>
 
        <h5>Published At : { localStorage.getItem("publishedAt")}<br />
           Author :{localStorage.getItem("author")} </h5>
-
-
 
 
 
@@ -74,6 +72,8 @@ render() {
 
 
         </div>
+
+        <Footer />
     
        </>
       
