@@ -2,7 +2,7 @@ import '../App.css';
 import Menu from '../Menu'
 import searchimg from '../search.png'
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
-import Dev from '../20210319_152952.png'
+// import Dev from '../20210319_152952.png'
 
 function Search() {
 
@@ -23,7 +23,7 @@ function Search() {
   return (
    <>
 <Menu />
-<img id="dev" src={Dev} alt="" />
+{/* <img id="dev" src={Dev} alt="" /> */}
 
 <div class="Search_area">
 
