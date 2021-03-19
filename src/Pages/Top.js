@@ -55,11 +55,11 @@ componentDidMount() {
       return response.json();
     })
     .then(data => {
-      console.log(data.records);
-
-
+      // console.log(data.records);
+      var data = data.records
+      
    this.setState({
-                 data:data.records
+                 data:data
                 
    })
            
