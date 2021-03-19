@@ -13,7 +13,9 @@ import Toptrend from '../Components/Toptrend';
 import Politics from './Politics'
 // import { Button } from '@material-ui/core';
 
-function go(){}
+
+
+
 function key(e){
    localStorage.setItem("search",e.target.value );
 
@@ -24,14 +26,8 @@ function key(e){
 
           var se = localStorage.getItem("search")
             document.getElementById("myInput").placeholder=se ;
-// window.open("https://developer.mozilla.org/en-US/docs/Web/API/Window/open")
           window.find(e.target.value)
-      //    if(!( window.find(e.target.value)))
-      //    {
-      //       document.getElementById("myInput").value=""         
-      //       document.getElementById("myInput").placeholder="Search not found"      
-      //   }
-
+   
          }
       
  
@@ -126,13 +122,13 @@ increase the knowledge</div>
                <input type="text" onKeyUp={key} id="myInput"
                 placeholder="Search for News.." title="Type in a name" />    
                 
-                
-                   <NavLink  to="/Politics" >     
+    
 
 <Fab size="small" color="secondary" aria-label="add">
-          <SearchOutlined />
+<NavLink exact activeClassName = "active_class" to="/Politics">
+   <SearchOutlined /></NavLink>
         </Fab>
-</NavLink >
+
 
 
 </div>
@@ -218,6 +214,11 @@ increase the knowledge</div>
        ))}
 </div>
 
+<br /><br /><br /><br /><br /><br /><br /><br />
+
+<div class="politics">
+<Politics />
+</div>
 
    </>
   );

@@ -33,7 +33,7 @@ return (
        
         <div className="img">
         <button onClick={click}> <center><img src={props.img} alt="" /></center></button> </div>
-        <p>{props.title}</p>
+         <p onClick={click}>{props.title}</p>
 
         </div></NavLink> 
     </div>

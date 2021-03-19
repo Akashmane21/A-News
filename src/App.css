@@ -176,7 +176,7 @@
     border-radius: 20px;
   }
   #nw{
-      
+
       height: 220px;
   }
   .sidebar__searchContainer:hover{
@@ -399,4 +399,10 @@ h5{
     position: relative;
     top: 7px;
     left: 25px;
+}
+
+.politics{
+    height: 1px;
+    overflow: hidden;
+    visibility: hidden;
 }
