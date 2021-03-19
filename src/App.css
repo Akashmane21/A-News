@@ -12,9 +12,10 @@
   }
 
   .contents{
+      margin-top: 10px;
       padding: 0px 10px 0px 10px;
       display: flex;
-      /* background-color: rgba(65, 62, 62, 0.548); */
+      /* background-color: rgba(65, 62, 62, 0.226); */
       /* padding-left: 30px; */
       border-radius: 18px;
   }
@@ -236,7 +237,7 @@ top: 20px;
   .block{
       border-radius: 10px;
       background-color: #2a2f3669;
-      margin-top: 20px;
+      margin-top: 50px;
       padding: 10px;
       cursor: pointer;
 
