@@ -19,7 +19,7 @@ import Toptrend from '../Components/Toptrend';
 function key(e){
    localStorage.setItem("search",e.target.value );
 
-      
+
 
       if(e.key==='Enter'){
           console.log(e.target.value)
@@ -27,8 +27,11 @@ function key(e){
           var se = localStorage.getItem("search")
             document.getElementById("myInput").placeholder=se ;
           window.find(e.target.value)
+
    
          }
+
+
       
  
 }
@@ -132,7 +135,9 @@ increase the knowledge</div>
 
 
 </div>
-     </div></center>
+     </div>
+     
+     </center>
 
 
 <div className="contents">
@@ -166,14 +171,16 @@ increase the knowledge</div>
    <Avatar src="https://timesofindia.indiatimes.com/thumb/msid-75847753,imgsize-513467,width-400,resizemode-4/75847753.jpg" />
    <h3>SPPU</h3></center>
    </div>
-   
+
+
 
    <div class="first">
    <center>
+   <a href="https://covid19-live-updates.netlify.app/">
    <Avatar src="https://www.hamilton-medical.com/.imaging/stk/hamilton-theme/text-backgroundimage-tablet/dam/Images/A-Pictures/Home/covid-19-header-2000x769.jpg/jcr:content/covid-19-header-2000x769.jpg.2020-03-20-09-55-30.jpg" />
-   <h3>Covid</h3></center>
+   </a>
+ <h3>Covid</h3></center>
    </div>
-
 
     <div class="first">
    <center>

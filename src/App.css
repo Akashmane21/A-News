@@ -179,12 +179,17 @@
     border-radius: 20px;
   }
   #nw{
-    /* width: 150px; */
-    /* -webkit-filter: drop-shadow(5px 5px 5px rgb(34, 34, 34)); */
-    filter: drop-shadow(5px 5px 5px rgba(7, 179, 64, 0.342));
+ filter: drop-shadow(5px 5px 5px rgba(7, 179, 64, 0.342));
 position: relative;
 left: -20px;
 top: 20px;
+      height: 220px;
+  }
+
+
+  #search{
+   filter: drop-shadow(5px 5px 5px rgba(7, 39, 179, 0.342));
+
       height: 220px;
   }
   .sidebar__searchContainer:hover{
