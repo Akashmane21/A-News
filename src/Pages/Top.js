@@ -124,7 +124,7 @@ increase the knowledge</div>
                 
     
 
-<NavLink exact activeClassName = "active_class" to="/Politics">
+<NavLink exact activeClassName = "active_class" to="/Search">
    <SearchOutlined />
    </NavLink>
        

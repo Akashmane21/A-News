@@ -76,7 +76,7 @@ header ul li{
 height: 50px;
   margin: 0px;
   margin-bottom: 13px;
-  overflow: hidden;
+  /* overflow: hidden; */
 /* margin-left: 20px; */
   list-style: none;
   text-decoration: none;
@@ -158,26 +158,18 @@ box-shadow: 0px 2px 22px 0px black;
 
 
   a.active_class{
-    background-color: rgba(230, 1, 70, 0.5);
-    padding-top: 4px;
-    color: red;
-    /* padding-bottom: 7px; */
-    /* padding: 6px; */
-    /* padding-bottom: 5px; */
+    background-color: rgba(128, 0, 53, 0.911);
 
-    /* width: 100px; */
+    /* padding-top: 4px; */
+    color: red;
+   
     padding: 10px 0px 10px 0px;
 
-     border-radius: 500px;
+     border-radius: 400px;
     animation: none;
   }
 
-  li.active_class{
-    width: 50%;
-  }
-  span.active_class{
-    color: red;
-  }
+
 
 
   body{
