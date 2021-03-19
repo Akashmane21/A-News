@@ -511,7 +511,7 @@ color: rgb(255, 174, 0);
       box-shadow: 0px 3px 5px 0px rgb(255, 0, 106);
       border: 1px solid white;
       background-color: rgba(6, 6, 8, 0.815);
-      height: 400px;
+      height: 280px;
       width: 94%;
   }
 
@@ -552,8 +552,8 @@ color: rgba(35, 138, 44, 0.849);
 padding: 3px;
 }
 
-input , textarea{
-color: rgb(10, 10, 10);
+form > input , textarea{
+color: rgb(8, 192, 121);
 padding: 7px;
 font-size: 18px;
 display: flex;
@@ -599,4 +599,32 @@ border: 1px solid chartreuse;
 font-weight: bold;
 color: green;
 
+}
+
+
+.info{
+    padding: 10px;
+}
+
+.info > h1{
+   font-family: "Montserrat Alternates", sans-serif ;
+}
+.info > h3{
+    font-family: "Montserrat Alternates", sans-serif;
+color: white;
+/* font-weight: bold; */
+}
+
+.slider{
+    /* font-weight: bolder; */
+    font-size: 20px;
+    color: rgb(245, 27, 161);
+    font-family: "Montserrat Alternates", sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
