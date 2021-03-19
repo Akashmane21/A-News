@@ -1,9 +1,9 @@
 import '../App.css';
 import Menu from '../Menu'
 import {NavLink} from 'react-router-dom'
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
+// import AddIcon from '@material-ui/icons/Add';
 import nm from '../nw.png'
 import { Component } from "react";
 import logo from '../logo.png'
@@ -11,7 +11,7 @@ import Avatar from '@material-ui/core/Avatar';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
 import Toptrend from '../Components/Toptrend';
 import Politics from './Politics'
-import { Button } from '@material-ui/core';
+// import { Button } from '@material-ui/core';
 
 function go(){}
 function key(e){
@@ -132,7 +132,10 @@ increase the knowledge</div>
 <Fab size="small" color="secondary" aria-label="add">
           <SearchOutlined />
         </Fab>
-</NavLink ></div>
+</NavLink >
+
+
+</div>
      </div></center>
 
 
