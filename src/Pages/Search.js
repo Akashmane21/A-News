@@ -10,19 +10,15 @@ import { Component } from "react";
 
   function key(e){
 
-   
-    
-    localStorage.setItem("search",e.target.value );
+         localStorage.setItem("search",e.target.value );
  if(e.key==='Enter'){
            console.log(e.target.value)
+           localStorage.setItem("search",e.target.value );
+           window.location.reload()           
+            //  document.getElementById("myInput").placeholder="" ;
+          //  window.find(e.target.value)
  
-           var se = localStorage.getItem("search")
-             document.getElementById("myInput").placeholder=se ;
-           window.find(e.target.value)
- 
-    
           }
-
  }
 
 
@@ -45,18 +41,17 @@ import { Component } from "react";
 
 componentDidMount() {
   
-
+  var newsurl = localStorage.getItem("search")
   
-//  var url = "https://gnews.io/api/v4/search?q=" + "{searchr} "+ "&token=b7b6991adf7e68c60acd7bb07bb7d54c&lang=hin"
-// console.log(url);
-  fetch("https://script.google.com/macros/s/AKfycbzzA7wIkfsf5XpOpl4j9z0bZc_WN7paq0Dt_FDNqnFv167Y3LALIxGxUXa88Z-b_kXR/exec?action=read")
+ var url = "https://gnews.io/api/v4/search?q="+newsurl+"&token=b7b6991adf7e68c60acd7bb07bb7d54c&lang=hin"
+console.log(url);
+  fetch(url)
   .then(response => {
      return response.json();
    })
    .then(data => {
      console.log(data);
-     data = data.records
-     
+     data = data.articles
   this.setState({
                 data:data
                

@@ -15,8 +15,6 @@ import Toptrend from '../Components/Toptrend';
 function key(e){
    localStorage.setItem("search",e.target.value );
 
-
-
       if(e.key==='Enter'){
           console.log(e.target.value)
 
@@ -24,12 +22,8 @@ function key(e){
             document.getElementById("myInput").placeholder=se ;
           window.find(e.target.value)
 
-   
          }
 
-
-      
- 
 }
 
 class Top extends Component {
@@ -47,15 +41,12 @@ class Top extends Component {
    }
 
 componentDidMount() {
-   
-  
 
    fetch("https://script.google.com/macros/s/AKfycbz4BS-um-GSPi-5GVUcseTva7DrpYAe4wLkvBATd5puTmAAr9ruDvMo-gQHQSt07IJB5A/exec?action=read")
    .then(response => {
       return response.json();
     })
     .then(data => {
-      // console.log(data.records);
       data = data.records
       
    this.setState({
@@ -220,9 +211,7 @@ increase the knowledge</div>
 
 <br /><br /><br /><br /><br /><br /><br /><br />
 
-{/* <div class="politics">
-<Politics />
-</div> */}
+
 
    </>
   );
