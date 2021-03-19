@@ -57,7 +57,7 @@
   }
 
 
-  .intro h1{
+ h1{
     padding-left: 7px;
     font-family: "Montserrat Alternates", sans-serif;
 
@@ -323,7 +323,7 @@ Button > h1{
  padding: 10px;
 }
 
-h1:hover{
+Button > h1:hover{
     color: rgb(13, 13, 14);
     background-color: rgba(114, 214, 8, 0.486);
 }
@@ -419,3 +419,34 @@ h5{
     overflow: hidden;
     visibility: hidden;
 }
+
+
+
+
+.Search_area{
+    /* background-color: rgba(23, 53, 43, 0.26); */
+    border-radius: 20px;
+    display: flex;
+    border: 1px solid rgba(221, 64, 16, 0.575);
+    margin: 10px;
+    /* padding: 10px; */
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+
+#h1{
+    padding-left: 7px;
+    font-family: "Montserrat Alternates", sans-serif;
+color: rgb(255, 174, 0);
+    position: relative;
+    top: 5px;
+  }
+
+
+  #dev{
+    display: flex;
+  
+      justify-content: center;
+      height: 40px;
+  }

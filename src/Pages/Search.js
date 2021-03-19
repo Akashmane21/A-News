@@ -2,6 +2,7 @@ import '../App.css';
 import Menu from '../Menu'
 import searchimg from '../search.png'
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
+import Dev from '../20210319_152952.png'
 
 function Search() {
 
@@ -22,6 +23,10 @@ function Search() {
   return (
    <>
 <Menu />
+<img id="dev" src={Dev} alt="" />
+
+<div class="Search_area">
+
 <center>
 <img id="search" src={searchimg} alt="" />
 
@@ -30,12 +35,14 @@ function Search() {
 
                <input type="text" onKeyUp={key} id="myInput"
                 placeholder="Search for News.." title="Type in a name" />    
-
-   <SearchOutlined />
-
+ <SearchOutlined />
 </div>
      </div>
 </center>
+</div>
+
+
+<h1 id="h1">Search Results - </h1>
    </>
   );
 }
