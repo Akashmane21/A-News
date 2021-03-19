@@ -5,7 +5,7 @@ import Politics from './Pages/Politics'
 import India from './Pages/India'
 import World from './Pages/World'
 import Top from './Pages/Top'
-import Search from './Pages/Error'
+import Search from './Pages/Search'
 function App() {
   return (
     <>

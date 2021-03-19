@@ -23,7 +23,7 @@ return (
 <ul className="icons">
     <li className="icon1"><NavLink exact activeClassName = "active_class" to="/"><IconButton>
             <HomeRoundedIcon  /> <h4>Home</h4></IconButton></NavLink></li>
-    <li className="icon4"><NavLink exact activeClassName = "active_class" to="/India"><IconButton>
+    <li className="icon4"><NavLink exact activeClassName = "active_class" to="/Search"><IconButton>
             <SearchOutlined /><h4>Search</h4></IconButton></NavLink></li>
     
             {/* <li className="icon4"><NavLink exact activeClassName = "active_class" to="/Bollywood"><IconButton>
