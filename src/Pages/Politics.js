@@ -101,7 +101,7 @@ TxtType.prototype.tick = function() {
 <div class="info">
     <h1 id="welcome"> Hello !</h1>
     <h3>I'm Akash 😊</h3>  
-   <div class="slider">& I'm a <a href="" class="typewrite" id= "tex" data-period="1500" 
+   <div class="slider">& I'm a <a href="https://www.google.com/search?q=akash_mane21&oq=aka&aqs=chrome.0.69i59j69i57j69i60l6.6180j0j4&sourceid=chrome&ie=UTF-8" class="typewrite" id= "tex" data-period="1500" 
         data-type='[ "Student.", "Creative.", "Daveloper.", "Designer.","Photographer." ]'>
 </a></div>
 
