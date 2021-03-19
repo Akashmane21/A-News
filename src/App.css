@@ -151,6 +151,7 @@
       position: relative;
       width: 200px;
       top: 40px;
+      padding-left: 40px;
       font-size: 17px;
       font-family: "Montserrat Alternates", sans-serif;
 
@@ -176,7 +177,9 @@
     border-radius: 20px;
   }
   #nw{
-
+position: relative;
+left: -20px;
+top: 20px;
       height: 220px;
   }
   .sidebar__searchContainer:hover{
