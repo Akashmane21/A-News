@@ -31,13 +31,12 @@ header{
   transition: 0.6s;
   z-index: 100000;
   padding: 5px;
-  height: 50px;
   border-radius: 20px;
  
   padding: 10px;
   width: 100%;
   display: flex;
-  height: 78px;
+  height: 53px;
   /* background-color: black; */
 margin: 0px;
     /* box-shadow: 0 8px 32px 0 rgba(15, 15, 15, 0.925); */
@@ -74,8 +73,9 @@ header ul li{
   padding: 0px 0px 0px 0px;
   width: 120px;
   font-family: "Montserrat Alternates", sans-serif !important;
-
+height: 50px;
   margin: 0px;
+  margin-bottom: 13px;
   overflow: hidden;
 /* margin-left: 20px; */
   list-style: none;
