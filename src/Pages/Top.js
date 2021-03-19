@@ -56,7 +56,7 @@ componentDidMount() {
     })
     .then(data => {
       // console.log(data.records);
-      var data = data.records
+      data = data.records
       
    this.setState({
                  data:data
