@@ -6,7 +6,8 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 function Politics() {
-
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop=0;
 
   function send() {
     const scriptURL =
