@@ -127,10 +127,10 @@ I Love Coding And i want to become a Full Stack Developer (Frontend as well as B
 <div class="social"> 
 <center><h1>Keep in Touch with me</h1></center>
 <ol>
-  <li><a href="https://www.facebook.com/akash.mane.777363/"><i class="fab fa-facebook" aria-hidden="true"><FacebookIcon /></i></a></li>
-  <li><a href="https://www.youtube.com/channel/UCCm6KhVF_J6GmkylESxVrqQ"><i class="fab fa-twitter" aria-hidden="true"><YouTubeIcon /></i></a></li>
-  <li><a href="https://github.com/Akashmame"><i class="fab fa-google-plus-g" aria-hidden="true"><GitHubIcon /></i></a></li>
-  <li><a href="https://www.instagram.com/akash_mane21/"><i class="fab fa-instagram" aria-hidden="true"><InstagramIcon /></i></a></li>
+  <li><a href="https://www.facebook.com/akash.mane.777363/"><FacebookIcon /></a></li>
+  <li><a href="https://www.youtube.com/channel/UCCm6KhVF_J6GmkylESxVrqQ"><YouTubeIcon /></a></li>
+  <li><a href="https://github.com/Akashmame"><GitHubIcon /></a></li>
+  <li><a href="https://www.instagram.com/akash_mane21/"><InstagramIcon /></a></li>
 </ol>
 </div>
 

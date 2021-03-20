@@ -698,14 +698,16 @@ body {
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
     background: linear-gradient(0deg, rgb(221, 221, 221), #fff);
     transition: .5s;
+    color: gray;
   }
   
   ol li a:hover {
+      color: gray;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     text-decoration:none;
   }
   
-  ol li a .fab {
+  /* ol li a  {
     width: 100%;
     height:100%;
     display:block;
@@ -715,21 +717,21 @@ body {
     font-size:24px;
     color: #262626;
     transition: .5s;
-  }
+  } */
   
-  ol li:nth-child(1) a:hover .fab {
+  ol li:nth-child(1) a:hover {
     color: #3b5998;
   }
   
-  ol li:nth-child(2) a:hover .fab {
+  ol li:nth-child(2) a:hover{
     color: #ed0000;
   }
   
-  ol li:nth-child(3) a:hover .fab {
+  ol li:nth-child(3) a:hover{
     color: #dd4b39;
   }
   
-  ol li:nth-child(4) a:hover .fab {
+  ol li:nth-child(4) a:hover{
     color: #007bb6;
   }
   
@@ -755,7 +757,7 @@ top: -90px;
 
 
 
-  i > .MuiSvgIcon-root {
+  a > .MuiSvgIcon-root {
     /* margin-right: 2vw; */
     font-size: 52px !important;
     padding: 10px;
