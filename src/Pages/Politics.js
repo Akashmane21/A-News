@@ -1,6 +1,10 @@
 import '../App.css';
 import Menu from '../Menu'
 import dp from '../profile.jpg'
+import GitHubIcon from '@material-ui/icons/GitHub';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
 function Politics() {
 
 
@@ -111,7 +115,7 @@ setTimeout(add, 2000);
     <h1 id="welcome"> Hello !</h1>
     <h3>I'm Akash 😊</h3>  
    <div class="slider">& I'm a <a href="https://www.google.com/search?q=akash_mane21&oq=aka&aqs=chrome.0.69i59j69i57j69i60l6.6180j0j4&sourceid=chrome&ie=UTF-8" class="typewrite" id= "tex" data-period="1500" 
-        data-type='[ "Student.", "Creative.", "Developer.", "Designer.","Photographer." ]'>
+        data-type='[ "Student.", "Developer.","Creative.",  "Designer."]'>
 </a></div>
 
 </div>
@@ -120,6 +124,15 @@ setTimeout(add, 2000);
 
 I Love Coding And i want to become a Full Stack Developer (Frontend as well as Backend Daveloper) </h5>
 <hr />
+<div class="social"> 
+<center><h1>Keep in Touch with me</h1></center>
+<ol>
+  <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"><FacebookIcon /></i></a></li>
+  <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"><YouTubeIcon /></i></a></li>
+  <li><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"><GitHubIcon /></i></a></li>
+  <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"><InstagramIcon /></i></a></li>
+</ol>
+</div>
 
 <div class="contact">
 <hr />
