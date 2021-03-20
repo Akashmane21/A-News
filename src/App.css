@@ -475,12 +475,13 @@ color: rgb(255, 174, 0);
   #footerdp{
     height: 100px;
    
-    border-radius: 10px;
+    border-radius: 50%;
     /* padding: 10%;
     border-radius: 20%; */
   }
 
   .profile{
+      margin-top: 30px;
       padding: 15px;
       background-color: #0d1117;
       /* height: 100px; */
@@ -517,11 +518,14 @@ color: rgb(255, 174, 0);
 }
 
 
-
+h5{
+    color: teal;
+    padding: 10px;
+}
 
 .contact{
     
-    color: rgb(155, 148, 148);
+    color: rgb(206, 201, 201);
 padding: 10px;
 /* border-top: 3px solid ; */
 margin-top: 30px;
@@ -539,12 +543,12 @@ background-color:rgba(45, 40, 53, 0.247) ;
 
 h6{
 font-size: 20px;
-color: rgba(244, 250, 245, 0.849);
+color: rgba(255, 255, 255, 0.966);
 padding: 3px;
 }
 
 form > input , textarea{
-color: rgb(0, 0, 0);
+color: rgb(247, 245, 245);
 padding: 7px;
 font-size: 18px;
 display: flex;
@@ -552,7 +556,7 @@ align-items: center;
 
 
 
-background-color: rgba(243, 239, 239, 0.596);
+background-color: rgba(63, 65, 64, 0.151);
 width: 80%;
 /* height: 35px; */
 border-radius: 7px;

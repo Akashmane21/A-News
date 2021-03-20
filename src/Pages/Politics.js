@@ -1,6 +1,6 @@
 import '../App.css';
 import Menu from '../Menu'
-
+import dp from '../profile.jpg'
 function Politics() {
 
 
@@ -96,7 +96,7 @@ TxtType.prototype.tick = function() {
 <Menu />
   <div className="profile">
 <div className="profile_intro">
-<img src="https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/80043036_453106185359601_2966543258949383547_n.jpg?tp=1&_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=109&_nc_ohc=ifRp4uTZfoQAX_mUltT&ccb=7-4&oh=cfd37baa0866db9e230253a72849f28e&oe=607EBB95&_nc_sid=4f375e" alt="" id="footerdp"/>
+<img src={dp} alt="" id="footerdp"/>
 
 <div class="info">
 
@@ -108,13 +108,16 @@ TxtType.prototype.tick = function() {
 
 </div>
 </div>
+<h5>Hii My name is Mane Akash Ambadas , I am from Latur , Maharastra. Now I'm doing Engineering in Information Technology .
 
-
+I Love Coding And i want to become a Full Stack Developer (Frontend as well as Backend Daveloper) </h5>
+<hr />
 
 <div class="contact">
-          <h5>
+<hr />
+          <p>
             If you have any Query or any information about it then Feel free to ..
-        </h5>
+        </p>
           <h3>Contact Me 📞</h3>
         Name: Mane Akash Ambadas,
         <br />
@@ -144,7 +147,15 @@ TxtType.prototype.tick = function() {
           </div>
         </div>
        
-        
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />        <br />
+        <br />
+        <br />
+
+        <br />
   </div>
    </>
   );
