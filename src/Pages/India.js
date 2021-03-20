@@ -1,6 +1,30 @@
 import CallMissedOutgoingIcon from '@material-ui/icons/CallMissedOutgoing';import { Component } from "react";
 import '../App.css';
 import Menu from '../Menu'
+
+import GitHubIcon from '@material-ui/icons/GitHub';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+
+
+function send() {
+   const scriptURL =
+     "https://script.google.com/macros/s/AKfycbwunSCg4dv6spf-fDmMk4gMjvSDqaVfMsJ2GseAt-bjpD9HTS7ANN71FR-g9vfmUKhQ/exec";
+   const form = document.forms["google-sheet"];
+
+   form.addEventListener("submit", (e) => {
+     alert("Your Data📝 is Sending.... plz Wait💕");
+     e.preventDefault();
+     fetch(scriptURL, { method: "POST", body: new FormData(form) })
+       .then((response) =>
+         alert("Thanks for Contacting📞 me..! I Will Contact You Soon...💖")
+       )
+       .catch((error) => console.error("Error!", error.message));
+   });
+ }
+
+
 class India extends Component {
     constructor(props) {
        super(props);
@@ -57,8 +81,30 @@ render() {
           Author :{localStorage.getItem("author")} </h5>
 
 
+          <center><h3>Subscribe for Daily News </h3></center>
+<div className="Sub">
 
+            <form method="post" autocomplete="off" name="google-sheet">
+              <h6>Name</h6>
+              <input type="text" name="Name" placeholder="Enter your Name" />
+              <h6>Email</h6>
+              <input type="email" name="E-mail" placeholder="Enter your E-mail" />
+             
+ <button onClick={send} id="send">
+                Subscribe
+            </button>
+            </form>
+</div>
 
+<div class="social"> 
+<center><h1>Keep in Touch with me</h1></center>
+<ol>
+  <li><a href="https://www.facebook.com/akash.mane.777363/"><FacebookIcon /></a></li>
+  <li><a href="https://www.youtube.com/channel/UCCm6KhVF_J6GmkylESxVrqQ"><YouTubeIcon /></a></li>
+  <li><a href="https://github.com/Akashmame"><GitHubIcon /></a></li>
+  <li><a href="https://www.instagram.com/akash_mane21/"><InstagramIcon /></a></li>
+</ol>
+</div>
         
  
 
@@ -66,6 +112,7 @@ render() {
         <br /><br /><br /><br />
         
  </div>
+
         
 
 
