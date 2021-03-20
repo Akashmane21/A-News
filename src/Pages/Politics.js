@@ -10,19 +10,28 @@ function Politics() {
   document.documentElement.scrollTop=0;
 
   function send() {
+    document.getElementById("loader").style.visibility = "visible";
+
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbwunSCg4dv6spf-fDmMk4gMjvSDqaVfMsJ2GseAt-bjpD9HTS7ANN71FR-g9vfmUKhQ/exec";
     const form = document.forms["google-sheet"];
 
     form.addEventListener("submit", (e) => {
-      alert("Your Data📝 is Sending.... plz Wait💕");
+          // document.getElementById("loader").style.visibility = "visible"
+
+      // alert("Your Data📝 is Sending.... plz Wait💕");
       e.preventDefault();
       fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) =>
-          alert("Thanks for Contacting📞 me..! I Will Contact You Soon...💖")
+    
+        window.location.reload()  
+        
+         
         )
+
         .catch((error) => console.error("Error!", error.message));
     });
+
   }
 
 
@@ -177,6 +186,17 @@ I Love Coding And i want to become a Full Stack Developer (Frontend as well as B
          © 2021 Copyright<br />
          <a class="text-white" href="https://akashmane21.github.io/Akash/">News-wave's.netlify.app</a>
          </center> </div>
+
+
+         <div class="loader" id="loader">
+  <div class="face">
+    <div class="circle"></div>
+  </div>
+  <div class="face">
+    <div class="circle"></div>
+  </div>
+  <h1 class="gradient-text" >Sending....</h1>
+</div>
         <br />
         <br />        <br />
         <br />
