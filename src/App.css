@@ -699,7 +699,7 @@ body {
     /* padding: 6px; */
     box-sizing: border-box;
     text-decoration:none;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 15px rgb(0, 0, 0);
     background: linear-gradient(0deg, rgb(221, 221, 221), #fff);
     transition: .5s;
     color: gray;
