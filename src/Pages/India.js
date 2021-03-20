@@ -89,9 +89,9 @@ render() {
 
             <form method="post" autocomplete="off" name="google-sheet">
               <h6>Name</h6>
-              <input type="text" name="Name" placeholder="Enter your Name" />
+              <input type="text" name="Name" placeholder="Enter your Name" required />
               <h6>Email</h6>
-              <input type="email" name="E-mail" placeholder="Enter your E-mail" />
+              <input type="email" name="E-mail" placeholder="Enter your E-mail" required />
              
  <button onClick={send} id="send">
                 Subscribe

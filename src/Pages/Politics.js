@@ -156,19 +156,20 @@ I Love Coding And i want to become a Full Stack Developer (Frontend as well as B
         <div class="form">
             <form method="post" autocomplete="off" name="google-sheet">
               <h6>Name</h6>
-              <input type="text" name="Name" placeholder="Enter your Name" />
+              <input type="text" required name="Name" placeholder="Enter your Name" />
               <h6>Email</h6>
-              <input type="email" name="E-mail" placeholder="Enter your E-mail" />
+              <input type="email" required name="E-mail" placeholder="Enter your E-mail" />
               <h6>Phone</h6>
               <input
                 type="phone"
                 name="Phone"
                 placeholder="Enter your Phone Number"
+                required
               />
 
               <h6>Message</h6>
 
-              <input type="text" name="Message" placeholder="Enter msg here !" />
+              <input type="text" required name="Message" placeholder="Enter msg here !" />
 
               {/* <textarea name = "Message" placeholder="Enter msg here !" name="ta" id="ta" cols="25" rows="3" /> */}
               <button onClick={send} id="send">
