@@ -113,6 +113,16 @@ sourcename={object.sourcename}
       
       ))}
 </div>
+
+<div class="copy">
+        <center>
+         © 2021 Copyright<br />
+         <a class="text-white" href="https://akashmane21.github.io/Akash/">News-wave's.netlify.app</a>
+         </center> </div>
+        <br />
+        <br />        <br />
+        <br />
+        <br />
    </>
   );
 }}

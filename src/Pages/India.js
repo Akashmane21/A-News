@@ -1,7 +1,6 @@
 import CallMissedOutgoingIcon from '@material-ui/icons/CallMissedOutgoing';import { Component } from "react";
 import '../App.css';
 import Menu from '../Menu'
-
 import GitHubIcon from '@material-ui/icons/GitHub';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -106,10 +105,20 @@ render() {
 </ol>
 </div>
         
- 
+
+
 
         <br />
-        <br /><br /><br /><br />
+        <br />
+        <div class="copy">
+        <center>
+         © 2021 Copyright<br />
+         <a class="text-white" href="https://akashmane21.github.io/Akash/">News-wave's.netlify.app</a>
+         </center> </div>
+         
+         
+         
+           <br /><br /><br />
         
  </div>
 
