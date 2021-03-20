@@ -95,10 +95,11 @@ TxtType.prototype.tick = function() {
    <>
 <Menu />
   <div className="profile">
-  <img src="https://instagram.fyyc6-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/117830835_308147406967261_357116488428353118_n.jpg?tp=1&_nc_ht=instagram.fyyc6-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=yyaD7sFTwRgAX9fHKJ_&ccb=7-4&oh=325dd53c8f09d756054a4fe771145ff8&oe=60801B38&_nc_sid=4f375e" alt="" id="footerdp"/>
 <div className="profile_intro">
-       
+<img src="https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/80043036_453106185359601_2966543258949383547_n.jpg?tp=1&_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=109&_nc_ohc=ifRp4uTZfoQAX_mUltT&ccb=7-4&oh=cfd37baa0866db9e230253a72849f28e&oe=607EBB95&_nc_sid=4f375e" alt="" id="footerdp"/>
+
 <div class="info">
+
     <h1 id="welcome"> Hello !</h1>
     <h3>I'm Akash 😊</h3>  
    <div class="slider">& I'm a <a href="https://www.google.com/search?q=akash_mane21&oq=aka&aqs=chrome.0.69i59j69i57j69i60l6.6180j0j4&sourceid=chrome&ie=UTF-8" class="typewrite" id= "tex" data-period="1500" 
@@ -114,7 +115,7 @@ TxtType.prototype.tick = function() {
           <h5>
             If you have any Query or any information about it then Feel free to ..
         </h5>
-          <h3>Contact Me 📞💕</h3>
+          <h3>Contact Me 📞</h3>
         Name: Mane Akash Ambadas,
         <br />
         G-mail :akash21mane21@gmail.com

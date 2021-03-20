@@ -1,8 +1,6 @@
-import Footer from '../Components/Footer'
 import CallMissedOutgoingIcon from '@material-ui/icons/CallMissedOutgoing';import { Component } from "react";
 import '../App.css';
 import Menu from '../Menu'
-
 class India extends Component {
     constructor(props) {
        super(props);
@@ -73,7 +71,6 @@ render() {
 
         </div>
 
-        <Footer />
     
        </>
       
