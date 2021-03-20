@@ -622,13 +622,27 @@ color: white;
 .slider{
     /* font-weight: bolder; */
     font-size: 20px;
-    color: rgb(243, 234, 240);
+    color: rgb(209, 203, 207);
     font-family: "Montserrat Alternates", sans-serif;
 
 }
 
-a{
+.slider a {
     text-decoration: none;
-    color: white;
+    color: rgb(224, 6, 6);
     font-size: 20px;
+}
+
+h2{
+    color: red;
+}
+
+#tex{
+    color: red;
+}
+
+.wrap{
+    padding-left: 10px;
+    font-size: 20px;
+    color: rgba(9, 255, 0, 0.795);
 }
