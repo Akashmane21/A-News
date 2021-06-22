@@ -54,7 +54,7 @@ class Top extends Component {
 
 componentDidMount() {
 
-   fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=ea422f08be18496499a73fdc6c5e3b3a")
+   fetch("https://gnews.io/api/v4/top-headlines?token=b7b6991adf7e68c60acd7bb07bb7d54c&lang=en")
    .then(response => {
       return response.json();
     })
@@ -223,7 +223,7 @@ increase the knowledge</div>
 {Array.isArray(data) && data.map(object => (
 
  <Toptrend 
- img={object.urlToImage} 
+ img={object.image} 
  title={object.title} 
  author={object.author}
  url={object.url}
