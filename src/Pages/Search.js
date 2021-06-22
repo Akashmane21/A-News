@@ -94,7 +94,7 @@ console.log(url);
 
 <div className="result">
 <h1 id="h1">{localStorage.getItem("search")} Search Results - </h1>
-
+<div class="news-body">
 {Array.isArray(data) && data.map(object => (
 
 <Toptrend 
@@ -112,6 +112,7 @@ sourcename={object.sourcename}
 />
       
       ))}
+      </div>
 </div>
 
 <div class="copy">

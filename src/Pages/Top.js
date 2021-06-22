@@ -54,12 +54,12 @@ class Top extends Component {
 
 componentDidMount() {
 
-   fetch("https://script.google.com/macros/s/AKfycbz4BS-um-GSPi-5GVUcseTva7DrpYAe4wLkvBATd5puTmAAr9ruDvMo-gQHQSt07IJB5A/exec?action=read")
+   fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=ea422f08be18496499a73fdc6c5e3b3a")
    .then(response => {
       return response.json();
     })
     .then(data => {
-      data = data.records
+      data = data.articles
       
    this.setState({
                  data:data
@@ -217,6 +217,9 @@ increase the knowledge</div>
 
 <div class="lower_body">
 <h1>Top Headlines:</h1>
+
+<div class="news-body">
+
 {Array.isArray(data) && data.map(object => (
 
  <Toptrend 
@@ -234,6 +237,8 @@ increase the knowledge</div>
  />
        
        ))}
+
+       </div>
 
 
        <div class="copy">

@@ -25,11 +25,7 @@ return (
             <HomeRoundedIcon  /> <h4>Home</h4></IconButton></NavLink></li>
     <li className="icon4"><NavLink exact activeClassName = "active_class" to="/Search"><IconButton>
             <SearchOutlined /><h4>Search</h4></IconButton></NavLink></li>
-    
-            {/* <li className="icon4"><NavLink exact activeClassName = "active_class" to="/Bollywood"><IconButton>
-            <AddToPhotosIcon /></IconButton></NavLink></li> */}
-    {/* <li className="icon2"><NavLink exact activeClassName = "active_class" to="/World"><IconButton>
-            <AccountCircleRoundedIcon /></IconButton></NavLink></li> */}
+
    <li className="icon3"><NavLink exact activeClassName = "active_class" to="/Politics"><IconButton>
             <PersonRoundedIcon /><h4>About</h4></IconButton></NavLink></li>
     

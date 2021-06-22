@@ -67,7 +67,7 @@ render() {
     <Menu />
     <img src={  localStorage.getItem("img")} alt="" id="news_img1" />
 
- <div className="block" id="news_block">
+ <div className="bock" id="news_block">
         
        <div className="items">
        {/* <center>🌫〽🔰🔰〰➖</center> */}

@@ -7,8 +7,7 @@ function Toptrend(props){
 
     
 function click() {
-    //    var base = document.querySelector('#news'); 
-    // base.addEventListener('click', function(event) {
+    
         localStorage.setItem("titlename",`${props.title}` );
         localStorage.setItem("img",`${props.img}` );
         localStorage.setItem("author",`${props.author}` );
@@ -23,13 +22,16 @@ function click() {
 
 
        console.log("clicked");
-    // });
+    
     }
+
+
 return (
     <>
     <div  className="Top_container">
     
-    <NavLink exact activeClassName = "active_class" to="/India"> <div className="block">
+    <NavLink exact activeClassName = "active_class" to="/India"> 
+    <div className="block">
        
         <div className="img">
         <button onClick={click}> <center><img src={props.img} alt="" /></center></button> </div>

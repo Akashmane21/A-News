@@ -244,7 +244,7 @@ top: 20px;
 
 
   .block{
-      border-radius: 10px;
+      border-radius: 8px;
       background-color: #2a2f3669;
       margin-top: 50px;
       padding: 10px;
@@ -252,11 +252,14 @@ top: 20px;
 
       overflow: hidden;
       /* border: 1px solid chartreuse; */
+      
+      height: 300px;
+      margin: 15px;
   }
 
   .block:hover{
       position: relative;
-      box-shadow: 0px 4px 8px 0px rgba(66, 66, 128, 0.356);
+      box-shadow: 0px 4px 8px 0px rgba(8, 8, 8, 0.719);
       top: -4px;
   }
 
@@ -435,7 +438,7 @@ h5{
     /* background-color: rgba(23, 53, 43, 0.26); */
     border-radius: 20px;
     display: flex;
-    border: 1px solid rgba(221, 64, 16, 0.575);
+    /* border: 1px solid rgba(221, 64, 16, 0.575); */
     margin: 10px;
     /* padding: 10px; */
     width: 94%;
@@ -911,4 +914,27 @@ display: flex;
     to {
         transform: rotate(1turn);
     }
+}
+
+
+
+.Top_container{
+  /* display: flex; */
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+@media(min-width:600px){
+  .news-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+
+ .block{
+  width: 400px;
+ }
+ 
 }
