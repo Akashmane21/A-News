@@ -2,6 +2,7 @@ import {NavLink} from 'react-router-dom'
 import './Netflix.css'
 import {  IconButton} from '@material-ui/core'
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
+import logo from "./logo.png";
 
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 // import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
@@ -19,6 +20,14 @@ return (
     <>
 
      <header>
+
+     <div className="slogen" id="hide">
+            <img id="spin" src={logo} alt="" />
+            <div class="slogen_child">
+              Explore The World increase the knowledge
+            </div>
+          </div>
+
 
 <ul className="icons">
     <li className="icon1"><NavLink exact activeClassName = "active_class" to="/"><IconButton>

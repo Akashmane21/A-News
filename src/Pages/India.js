@@ -41,7 +41,6 @@ class India extends Component {
   document.body.scrollTop = 0;
     document.documentElement.scrollTop=0;
 
-  
   localStorage.getItem("sourcename");
 
   fetch("https://script.google.com/macros/s/AKfycbz4BS-um-GSPi-5GVUcseTva7DrpYAe4wLkvBATd5puTmAAr9ruDvMo-gQHQSt07IJB5A/exec?action=read")
