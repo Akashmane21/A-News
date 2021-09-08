@@ -116,6 +116,7 @@ setTimeout(add, 2000);
   return (
    <>
 <Menu />
+
   <div className="profile">
 <div className="profile_intro">
 <img src={dp} alt="" id="footerdp"/>

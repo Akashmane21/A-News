@@ -508,7 +508,6 @@ color: rgb(255, 174, 0);
   }
 
   .profile{
-      margin-top: 30px;
       padding: 15px;
       background-color: #0d1117;
       /* height: 100px; */
@@ -564,8 +563,7 @@ margin-top: 30px;
 margin-top: 20px;
 padding: 20px;
 border-radius: 10px;
-/* background-color: rgba(243, 46, 243, 0.219); */
-background-color:rgb(98, 0, 255) ;
+background-color: rgba(19, 16, 19, 0.808);
 }
 
 
@@ -996,5 +994,15 @@ position: relative;
     height: 300px;
     width: auto;
   }
+
+  .profile{
+    margin-top: 100px;
+  }
 }  
  
+
+@media(max-width:600px){
+  .profile{
+    margin-top: 30px;
+  }
+}
