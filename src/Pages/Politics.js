@@ -185,7 +185,7 @@ I Love Coding And i want to become a Full Stack Developer (Frontend as well as B
         <div class="copy">
         <center>
          © 2021 Copyright<br />
-         <a class="text-white" href="https://akashmane21.github.io/Akash/">News-wave's.netlify.app</a>
+         <a class="text-white" href="akash-mane.netlify.app">News-wave's.netlify.app</a>
          </center> </div>
 
 

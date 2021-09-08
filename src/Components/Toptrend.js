@@ -30,7 +30,7 @@ return (
     <>
     <div  className="Top_container">
     
-    <NavLink exact activeClassName = "active_class" to="/India"> 
+    <NavLink exact activeClassName = "active_class" to="/Detail"> 
     <div className="block">
        
         <div className="img">

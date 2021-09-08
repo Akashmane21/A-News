@@ -13,7 +13,7 @@ function App() {
    
 <Switch>
          <Route exact path='/' component={Top} />
-         <Route exact path='/india' component={India} />
+         <Route exact path='/Detail' component={India} />
          <Route exact path='/World' component={World} /> 
          <Route exact path='/Top' component={Top} />
          <Route exact path='/Bollywood' component={Bollywood} /> 
