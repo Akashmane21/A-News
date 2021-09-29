@@ -40,7 +40,6 @@ function Politics() {
 
 
 function  add() {
-    console.log('All assets loaded')
 
 
     

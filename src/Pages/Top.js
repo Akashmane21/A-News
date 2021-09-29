@@ -14,10 +14,7 @@ function key(e) {
   localStorage.setItem("search", e.target.value);
 
   if (e.key === "Enter") {
-    console.log(e.target.value);
-
-    var se = localStorage.getItem("search");
-    document.getElementById("myInput").placeholder = se;
+ 
     window.find(e.target.value);
   }
 }
@@ -63,7 +60,6 @@ class Top extends Component {
 
   render() {
     const { data } = this.state;
-    console.log(data);
     return (
       <>
         <Menu />

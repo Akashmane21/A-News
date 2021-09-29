@@ -1,9 +1,7 @@
 import './App.css';
 import {Route,Switch} from 'react-router-dom'
-import Bollywood from './Pages/Bollywood'
-import Politics from './Pages/Politics'
-import India from './Pages/India'
-import World from './Pages/World'
+import About from './Pages/Aboutme'
+import Detail from './Pages/Detail'
 import Top from './Pages/Top'
 import Search from './Pages/Search'
 function App() {
@@ -13,11 +11,9 @@ function App() {
    
 <Switch>
          <Route exact path='/' component={Top} />
-         <Route exact path='/Detail' component={India} />
-         <Route exact path='/World' component={World} /> 
+         <Route exact path='/Detail' component={Detail} />
          <Route exact path='/Top' component={Top} />
-         <Route exact path='/Bollywood' component={Bollywood} /> 
-         <Route exact path='/politics' component={Politics} />
+         <Route exact path='/About' component={About} />
          <Route exact path='/Search' component={Search} />
          <Route component={Error} />
  </Switch>

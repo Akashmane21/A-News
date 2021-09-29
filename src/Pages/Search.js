@@ -12,7 +12,6 @@ import { Component } from "react";
 
          localStorage.setItem("search",e.target.value );
  if(e.key==='Enter'){
-           console.log(e.target.value)
            localStorage.setItem("search",e.target.value );
            window.location.reload()           
             //  document.getElementById("myInput").placeholder="" ;
@@ -44,13 +43,11 @@ componentDidMount() {
   var newsurl = localStorage.getItem("search")
   // https://gnews.io/api/v4/top-headlines
  var url = "https://gnews.io/api/v4/search?q="+newsurl+"&token=f4e817c05107f00f37ceb1d699d10772&lang=en"
-console.log(url);
   fetch(url)
   .then(response => {
      return response.json();
    })
    .then(data => {
-     console.log(data);
      data = data.articles
   this.setState({
                 data:data
@@ -69,7 +66,6 @@ console.log(url);
 
  render() {
   const { data } = this.state;
-  console.log(data);
   return (
    <>
 <Menu />

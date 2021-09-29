@@ -43,7 +43,6 @@ class India extends Component {
         return response.json();
       })
       .then((data) => {
-        console.log(data.records);
       });
   }
 
