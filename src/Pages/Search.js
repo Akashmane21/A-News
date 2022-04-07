@@ -42,7 +42,8 @@ componentDidMount() {
   
   var newsurl = localStorage.getItem("search")
   // https://gnews.io/api/v4/top-headlines
- var url = "https://gnews.io/api/v4/search?q="+newsurl+"&token=f4e817c05107f00f37ceb1d699d10772&lang=en"
+ var url = "https://gnews.io/api/v4/search?q="+newsurl+"&token=b7b6991adf7e68c60acd7bb07bb7d54c&lang=en"
+ 
   fetch(url)
   .then(response => {
      return response.json();
